@@ -133,6 +133,7 @@ exports.login = async (req, res) => {
 
     // Authenticate user by setting session
     req.session.userId = user._id;
+    
     req.session.save();  // Ensure session is saved before sending response
 
     res.json({ message: 'User logged in successfully', success: true });
@@ -163,10 +164,13 @@ exports.logout = (req, res) => {
 // Delete User Account
 exports.deleteAccount = async (req, res) => {
   try {
-    const userId = req.session.userId; // Retrieve user ID from the session
+
     
+    const userId = req.session.userId; // Retrieve user ID from the session
+    console.log(userId);
     // Check if user is authenticated
     if (!userId) {
+      // console.log(userId)
       return res.status(401).json({ error: 'Unauthorized request' });
     }
 

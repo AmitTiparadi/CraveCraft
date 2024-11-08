@@ -270,6 +270,15 @@ function NavBar() {
     navigate('/');
   };
 
+  const handleDelete = () => {
+    // Here you can make a request to your backend to delete the user's account
+    console.log('Account deleted successfully!');  // Replace with actual logic for deleting account
+    
+    // After deletion, log the user out and redirect them to the home page
+    setIsLoggedIn(false);
+    navigate('/');
+  };
+
   const handleLogin = () => {
     setIsLoggedIn(true);
   };
