@@ -14,6 +14,7 @@ router.get('/:category', recipeController.getRecipesByCategory);
 router.get('/:category/:id', recipeController.getRecipeDetails);
 
 // Update a recipe (protected route)
-router.patch('/:id', authMiddleware, recipeController.updateRecipe);
+router.get('/:id', recipeController.getRecipeDetails);
+router.patch('/:id', recipeController.updateRecipe);
 
 module.exports = router;

@@ -115,11 +115,15 @@
 
 
 
+
+
+
+// import React, { useState, useEffect } from 'react';
 import './App.css';
 import Home from './components/Home';
 import NavBar from './components/Navbar'; 
 import AboutUs from './components/Aboutus';
-import RecipesByArea from './components/RecipesByArea'; 
+import Confirm from './components/Confirm'; 
 import Login from './components/Login';
 import Signup from './components/Signup';
 import NorthIndian from './components/NorthIndian';
@@ -127,6 +131,7 @@ import SouthIndian from './components/SouthIndian';
 import Continental from './components/Continental';
 import Recipe from './components/Recipe';
 import RecipeDetails from './components/RecipeDetails';
+// import { checkSession } from './sessionService';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -150,11 +155,11 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: '/recipes/:area',
+    path: '/recipes/:id',
     element: (
       <>
         <NavBar />
-        <RecipesByArea />
+        <Confirm />
       </>
     ),
   },
@@ -233,8 +238,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  
   return (
+    
     <RouterProvider router={router} />
+
   );
 }
 
