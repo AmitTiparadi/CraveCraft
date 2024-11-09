@@ -49,15 +49,19 @@ Welcome to the Recipe Sharing Platform! This is a web application that allows us
 ## Install dependencies for backend and frontend
 **Frontend**
   *dependencies*
+  
     cd frontend
     npm install @testing-library/jest-dom @testing-library/react @testing-library/user-event axios bcrypt body-parser express mongodb nodemon react react-dom react-router-dom react-scripts web-vitals
   *devDependencies*
+  
     npm install -D autoprefixer postcss tailwindcss
 **Backend**
-    *dependencies*
+  *dependencies*
+    
       cd backend
       npm install bcrypt connect-mongo cors dotenv express express-session jsonwebtoken mongoose
-    *devDependencies*
+  *devDependencies*
+    
       npm install -D nodemon
 ## Environment Variables
     MONGODB_URI=<Your MongoDB URI>
@@ -66,11 +70,13 @@ Welcome to the Recipe Sharing Platform! This is a web application that allows us
     ORIGIN=http://localhost:3000
 ## Running the Application
   **Start the backend server:**
+  
     cd backend
     npm start
     The backend server should now be running on http://localhost:4000.
 
   **Start the frontend server:**
+  
     cd front end
     npm start
     The frontend should now be accessible at http://localhost:3000.
