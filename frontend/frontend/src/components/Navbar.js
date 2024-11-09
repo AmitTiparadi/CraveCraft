@@ -381,7 +381,7 @@ function NavBar() {
 return (
   <nav className="navbar navbar-expand-lg bg-black border-bottom border-body" data-bs-theme="dark">
     <div className="container-fluid">
-      <Link className="navbar-brand" to="/">Sharipe</Link>
+      <Link className="navbar-brand" to="/">CraveCraft</Link>
       <div className="d-flex align-items-center">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row">
           <li className="nav-item">

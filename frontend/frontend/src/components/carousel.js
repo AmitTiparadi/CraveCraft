@@ -1,5 +1,8 @@
 import React from "react";
-import Untitled from '../images/Untitled design (2).jpg';
+import Carousel1 from '../images/Carousel1.jpg';
+import CraveCraft from '../images/CraveCraft.png';
+import Carousel2 from '../images/Carousel2.jpg';
+import Carousel3 from '../images/Carousel3.jpg';
 
 const Carousel = () => {
   return (
@@ -32,13 +35,13 @@ const Carousel = () => {
       </div>
       <div className="carousel-inner" style={{ height: "100%" }}>
         <div className="carousel-item active">
-          <img src={Untitled} className="d-block w-100" style={{ height: "100%", objectFit: "fill" }} alt="First slide" />
+          <img src={CraveCraft} className="d-block w-100" style={{ height: "100%", objectFit: "fill" }} alt="First slide" />
         </div>
         <div className="carousel-item">
-          <img src={Untitled} className="d-block w-100" style={{ height: "100%", objectFit: "fill" }} alt="Second slide" />
+          <img src={Carousel1} className="d-block w-100" style={{ height: "100%", objectFit: "fill" }} alt="Second slide" />
         </div>
         <div className="carousel-item">
-          <img src={Untitled} className="d-block w-100" style={{ height: "100%", objectFit: "fill" }} alt="Third slide" />
+          <img src={Carousel3} className="d-block w-100" style={{ height: "100%", objectFit: "fill" }} alt="Third slide" />
         </div>
       </div>
       <button
