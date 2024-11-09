@@ -1,71 +1,79 @@
-# Getting Started with Create React App
+# Recipe Sharing Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Recipe Sharing Platform! This is a web application that allows users to discover, save, and share recipes from various cuisines. Built with a modern tech stack (MongoDB, Node.js, and React.js), this platform supports high scalability and a seamless user experience, including user authentication and customized recipe collections.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Environment Variables](#environment-variables)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Recipe Discovery**: Browse recipes from various categories like North Indian, South Indian, and Continental.
+- **User Authentication**: Register and log in with secure authentication.
+- **Recipe Cards**: Each category has recipe cards with ingredients and preparation details.
+- **Personalization**: Save and manage your favorite recipes.
+- **Dark Theme**: Modern black theme design for an engaging UI.
+- **Responsive Design**: Fully responsive layout, optimized for both web and mobile devices.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- **Frontend**: React.js, React Router
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB (MongoDB Atlas for cloud storage)
+- **Authentication**: JWT (JSON Web Token)
+- **Styling**: CSS with custom styles
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Node.js** (v14 or above)
+- **MongoDB Atlas Account** (or a local MongoDB instance)
+- **Git**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the repository:**
 
-### `npm run eject`
+   ```bash
+   git clone https://github.com/your-username/recipe-sharing-platform.git
+   cd recipe-sharing-platform
+## Install dependencies for backend and frontend
+**Frontend**
+  *dependencies*
+    cd frontend
+    npm install @testing-library/jest-dom @testing-library/react @testing-library/user-event axios bcrypt body-parser express mongodb nodemon react react-dom react-router-dom react-scripts web-vitals
+  *devDependencies*
+    npm install -D autoprefixer postcss tailwindcss
+**Backend**
+    *dependencies*
+      cd backend
+      npm install bcrypt connect-mongo cors dotenv express express-session jsonwebtoken mongoose
+    *devDependencies*
+      npm install -D nodemon
+## Environment Variables
+    MONGODB_URI=<Your MongoDB URI>
+    SESSION_SECRET=<Your  SESSION_SECRET>
+    PORT=4000
+    ORIGIN=http://localhost:3000
+## Running the Application
+  **Start the backend server:**
+    cd backend
+    npm start
+    The backend server should now be running on http://localhost:4000.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  **Start the frontend server:**
+    cd front end
+    npm start
+    The frontend should now be accessible at http://localhost:3000.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-#
+    
