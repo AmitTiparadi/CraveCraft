@@ -225,6 +225,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import './nav.css';
+import defaultimage from '../images/default-image.jpg';
 
 function NavBar() {
   const [query, setQuery] = useState('');
@@ -400,7 +401,7 @@ return (
                   aria-expanded="false"
                 >
                   <img
-                    src="default-profile.jpg" // Replace with actual profile image URL
+                    src={defaultimage} // Replace with actual profile image URL
                     alt="Profile"
                     className="profile-image"
                   />
