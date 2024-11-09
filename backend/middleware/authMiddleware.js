@@ -13,7 +13,6 @@
 
 module.exports = (req, res, next) => {
     // Check if the session exists and has a user ID
-    console.log(req.session.userId);
     if (req.session && req.session.userId) {
       next(); // User is authenticated, proceed to the next middleware or route handler
     } else {
