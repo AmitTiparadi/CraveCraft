@@ -10,9 +10,7 @@ Welcome to the Recipe Sharing Platform! This is a web application that allows us
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Environment Variables](#environment-variables)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 
