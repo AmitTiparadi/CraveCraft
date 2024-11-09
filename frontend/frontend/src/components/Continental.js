@@ -2,9 +2,18 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Cards from './cards';
-import con from '../images/image-3.png';
+import spaegatti from '../images/continental/spag.jpeg';
+import salad from '../images/continental/cae.jpeg';
+import fishchips from '../images/continental/fish&chips.jpeg';
+import grilled from '../images/continental/grilled.jpeg';
+import soup from '../images/continental/soup.jpeg';
+import beef from '../images/continental/beef.jpeg';
+import alfredo from '../images/continental/alfredo.jpeg';
+import veggies from '../images/continental/veggies.jpeg';
+import shrimp from '../images/continental/shrimp.jpeg';
+import greek from '../images/continental/greek.jpeg';
 
-const images = [con, ];
+const images = [spaegatti, salad,fishchips,grilled,soup,beef, alfredo,veggies,shrimp,greek];
 
 const Continental = () => {
   const [recipes, setRecipes] = useState([]);

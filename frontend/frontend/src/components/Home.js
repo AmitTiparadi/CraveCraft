@@ -68,7 +68,7 @@ import { Link } from 'react-router-dom';
 import Cards from './cards';
 import Carousel from './carousel';
 import northIndianImg from '../images/poha.jpg';
-import southIndianImg from '../images/Untitled design (2).jpg';
+import southIndianImg from '../images/South/doss.jpeg';
 import continentalImg from '../images/WhatsApp Image 2024-11-04 at 16.30.17_8c26328d.jpg';
 
 const Home = () => {

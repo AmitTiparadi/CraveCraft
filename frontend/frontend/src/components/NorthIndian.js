@@ -3,8 +3,17 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Cards from './cards';
 import cholebhature from '../images/CholeBhature.jpg';
+import Butterchick from '../images/download (3).jpeg';
+import palakpaneer from '../images/palakpan.jpeg';
+import rajma from '../images/rajma.jpeg';
+import paneerTikka from '../images/Paneer-Tikka-Featured.jpg';
+import alooGobi from '../images/aloo gobi.jpeg';
+import bhindi from '../images/bhindi.jpeg';
+import kadhai from '../images/kadhai.jpeg';
+import dal from '../images/dal.jpeg';
+import matarPaneer from '../images/matarPan.jpeg';
 
-const images = [cholebhature, ];
+const images = [Butterchick,palakpaneer,cholebhature,rajma,paneerTikka,alooGobi,bhindi,kadhai,dal,matarPaneer];
 
 const NorthIndian = () => {
   const [recipes, setRecipes] = useState([]);
